@@ -1,0 +1,57 @@
+.todo {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 100%;
+  max-height: 90px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  gap: 7px;
+}
+
+.todo .container h2 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 27px;
+}
+
+.todo .container p {
+  margin: 0;
+  font-weight: lighter;
+  font-size: 19px;
+}
+
+.todo input {
+  margin-right: 6px;
+  width: 25px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.todo svg {
+  font-size: 22px;
+  margin: 0 15px 2px 0;
+  cursor: pointer;
+  transition: color 0.8s;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.todo svg:hover {
+  color: white;
+}
+
+.todo.done {
+  text-decoration: line-through;
+}
+
+.todo.done svg {
+  color: #fff;
+}
